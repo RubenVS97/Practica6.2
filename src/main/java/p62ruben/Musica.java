@@ -31,7 +31,7 @@ public class Musica extends Producto{
 
     @Override
     public String toString() {
-        return super.toString() + "Musica{" + "grupo=" + grupo + '}';
+        return super.toString() + "Musica{" + "grupo=" + grupo + '}'+"\n";
     }
     
     

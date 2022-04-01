@@ -8,8 +8,8 @@ package p62ruben;
  *
  * @author ruben
  */
-public final class LibroPapel extends Libro implements SeEnvia{
-    
+public final class LibroPapel extends Libro implements SeEnvia {
+
     private int numPaginas;
 
     public LibroPapel(int numPaginas, String isbn, String codigo, double precio, int iva, String descripcion) {
@@ -36,7 +36,7 @@ public final class LibroPapel extends Libro implements SeEnvia{
 
     @Override
     public String toString() {
-        return super.toString() + "LibroPapel{" + "numPaginas=" + numPaginas + '}';
+        return super.toString() + "LibroPapel{" + "numPaginas=" + numPaginas + '}'+"\n";
     }
 
     @Override
@@ -46,7 +46,11 @@ public final class LibroPapel extends Libro implements SeEnvia{
 
     @Override
     public int compareTo(Libro t) {
-        
+
+        if (this.getIsbn() == t.getIsbn()) {
+            return 1;
+        }
+        return -1;
     }
 
     @Override
@@ -58,7 +62,7 @@ public final class LibroPapel extends Libro implements SeEnvia{
 
     @Override
     public boolean equals(Object obj) {
-        if (! super.equals(obj)) {
+        if (!super.equals(obj)) {
             return false;
         }
         if (getClass() != obj.getClass()) {
@@ -68,6 +72,10 @@ public final class LibroPapel extends Libro implements SeEnvia{
         return this.numPaginas == other.numPaginas;
     }
     
-    
-    
+    //Método inventado
+    @Override
+    public void arrancarPagina() {
+        System.out.println("Has arrancado una página");
+    }
+
 }

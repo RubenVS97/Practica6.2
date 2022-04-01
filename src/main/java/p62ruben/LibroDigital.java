@@ -8,8 +8,8 @@ package p62ruben;
  *
  * @author ruben
  */
-public final class LibroDigital extends Libro implements SeDescarga{
-    
+public final class LibroDigital extends Libro implements SeDescarga {
+
     private int numKbytes;
 
     public LibroDigital(int numKbytes, String isbn, String codigo, double precio, int iva, String descripcion) {
@@ -36,7 +36,7 @@ public final class LibroDigital extends Libro implements SeDescarga{
 
     @Override
     public String toString() {
-        return super.toString() + "LibroDigital{" + "numKbytes=" + numKbytes + '}';
+        return super.toString() + "LibroDigital{" + "numKbytes=" + numKbytes + '}'+"\n";
     }
 
     @Override
@@ -53,7 +53,7 @@ public final class LibroDigital extends Libro implements SeDescarga{
 
     @Override
     public boolean equals(Object obj) {
-        if (! super.equals(obj)) {
+        if (!super.equals(obj)) {
             return false;
         }
         if (getClass() != obj.getClass()) {
@@ -65,9 +65,15 @@ public final class LibroDigital extends Libro implements SeDescarga{
 
     @Override
     public int compareTo(Libro t) {
-        
+        if (this.getIsbn() == t.getIsbn()) {
+            return 1;
+        }
+        return -1;
     }
-    
-    
-    
+
+    @Override
+    public void arrancarPagina() {
+        System.out.println("No se puede por que es digital");
+    }
+
 }
