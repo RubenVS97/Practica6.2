@@ -9,7 +9,7 @@ package p62ruben;
  * @author ruben
  */
 public interface SeDescarga {
-    
+
     public abstract void descargar();
-    
+
 }

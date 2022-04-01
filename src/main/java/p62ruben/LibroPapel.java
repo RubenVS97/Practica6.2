@@ -36,7 +36,7 @@ public final class LibroPapel extends Libro implements SeEnvia {
 
     @Override
     public String toString() {
-        return super.toString() + "LibroPapel{" + "numPaginas=" + numPaginas + '}'+"\n";
+        return super.toString() + "LibroPapel{" + "numPaginas=" + numPaginas + '}' + "\n";
     }
 
     @Override
@@ -71,7 +71,7 @@ public final class LibroPapel extends Libro implements SeEnvia {
         final LibroPapel other = (LibroPapel) obj;
         return this.numPaginas == other.numPaginas;
     }
-    
+
     //Método inventado
     @Override
     public void arrancarPagina() {

@@ -10,7 +10,7 @@ import java.util.Objects;
  *
  * @author ruben
  */
-public abstract class Ropa extends Producto implements SeEnvia{
+public abstract class Ropa extends Producto implements SeEnvia {
 
     private String marca;
 
@@ -48,7 +48,7 @@ public abstract class Ropa extends Producto implements SeEnvia{
 
     @Override
     public boolean equals(Object obj) {
-        if (! super.equals(obj)) {
+        if (!super.equals(obj)) {
             return false;
         }
         if (getClass() != obj.getClass()) {
@@ -57,7 +57,5 @@ public abstract class Ropa extends Producto implements SeEnvia{
         final Ropa other = (Ropa) obj;
         return Objects.equals(this.marca, other.marca);
     }
-    
-    
-    
+
 }

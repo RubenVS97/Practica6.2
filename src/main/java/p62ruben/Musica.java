@@ -8,8 +8,8 @@ package p62ruben;
  *
  * @author ruben
  */
-public class Musica extends Producto{
-    
+public class Musica extends Producto {
+
     private String grupo;
 
     public Musica(String grupo, String codigo, double precio, int iva, String descripcion) {
@@ -31,9 +31,7 @@ public class Musica extends Producto{
 
     @Override
     public String toString() {
-        return super.toString() + "Musica{" + "grupo=" + grupo + '}'+"\n";
+        return super.toString() + "Musica{" + "grupo=" + grupo + '}' + "\n";
     }
-    
-    
-    
+
 }

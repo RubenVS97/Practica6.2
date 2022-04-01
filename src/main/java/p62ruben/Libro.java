@@ -10,8 +10,8 @@ import java.util.Objects;
  *
  * @author ruben
  */
-public abstract class Libro extends Producto implements Comparable<Libro>{
-    
+public abstract class Libro extends Producto implements Comparable<Libro> {
+
     private String isbn;
 
     public Libro(String isbn, String codigo, double precio, int iva, String descripcion) {
@@ -48,7 +48,7 @@ public abstract class Libro extends Producto implements Comparable<Libro>{
 
     @Override
     public boolean equals(Object obj) {
-        if (! super.equals(obj)) {
+        if (!super.equals(obj)) {
             return false;
         }
         if (getClass() != obj.getClass()) {
@@ -57,8 +57,8 @@ public abstract class Libro extends Producto implements Comparable<Libro>{
         final Libro other = (Libro) obj;
         return Objects.equals(this.isbn, other.isbn);
     }
-    
+
     //Método inventado
     public abstract void arrancarPagina();
-    
+
 }

@@ -36,7 +36,7 @@ public final class LibroDigital extends Libro implements SeDescarga {
 
     @Override
     public String toString() {
-        return super.toString() + "LibroDigital{" + "numKbytes=" + numKbytes + '}'+"\n";
+        return super.toString() + "LibroDigital{" + "numKbytes=" + numKbytes + '}' + "\n";
     }
 
     @Override
@@ -71,6 +71,7 @@ public final class LibroDigital extends Libro implements SeDescarga {
         return -1;
     }
 
+    //Método inventado
     @Override
     public void arrancarPagina() {
         System.out.println("No se puede por que es digital");

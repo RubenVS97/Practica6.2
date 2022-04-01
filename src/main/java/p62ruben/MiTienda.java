@@ -64,5 +64,9 @@ public class MiTienda {
         }
         System.out.println(libros.contains(l1));
 
+        for (SeEnvia envio : envios) {
+            envio.enviar("Calle inventada456");
+        }
+
     }
 }

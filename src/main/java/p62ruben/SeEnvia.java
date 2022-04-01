@@ -9,7 +9,7 @@ package p62ruben;
  * @author ruben
  */
 public interface SeEnvia {
-    
+
     public abstract void enviar(String dir);
-    
+
 }

@@ -38,7 +38,7 @@ public final class Pantalon extends Ropa {
 
     @Override
     public String toString() {
-        return super.toString() + "Pantalon{" + "talla=" + talla + '}'+"\n";
+        return super.toString() + "Pantalon{" + "talla=" + talla + '}' + "\n";
     }
 
     @Override
@@ -55,7 +55,7 @@ public final class Pantalon extends Ropa {
 
     @Override
     public boolean equals(Object obj) {
-        if (! super.equals(obj)) {
+        if (!super.equals(obj)) {
             return false;
         }
         if (getClass() != obj.getClass()) {
@@ -64,7 +64,5 @@ public final class Pantalon extends Ropa {
         final Pantalon other = (Pantalon) obj;
         return Objects.equals(this.talla, other.talla);
     }
-    
-    
 
 }
